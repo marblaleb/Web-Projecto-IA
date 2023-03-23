@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta name="robots" content="index, follow">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="En esta web repasamos las últimas noticias sobre IA">
+    <meta name="author" content="Marco Blanco, Jose Luis Pino">
+    <meta name="copyright" content="MachineLearners.com">
+    <meta name="keywords" content="IA, Machine Learning, Inteligencia Artificial">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../icons/robot_icon.png">
+    <link rel="stylesheet" href="../css/stylesA.css">
+    <title>The Machine Learners</title>
+</head>
+
+<article>
+
+    <body>
+        <header id="header">
+            <h2>Formulario/Encuesta para poder recomendarte nuevos artículos</h2>
+        </header>
+        <main>
+            <div class="centrar centrarF">
+                <form action="mailto:marcoblaleb@gmail.com" method="post" enctype="text/plain">
+                    <fieldset>
+                        <legend class="leyenForm">Datos personales</legend>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre"><br>
+
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" placeholder="Correo"><br>
+
+                        <label for="edad">Edad:</label>
+                        <input type="number" id="edad" name="edad" placeholder="Edad "><br>
+
+                        <label for="provincia">Seleccione su provincia</label><br>
+                        <select name="provincia" id="provincia">
+                            <option value="ov">Provincia</option>
+                            <optgroup label="Andalucía">
+
+                                <option value="se">Sevilla</option>
+
+                                <option value="ma">Málaga</option>
+
+                                <option value="ca">Cádiz</option>
+
+                                <option value="hu">Huelva</option>
+
+                                <option value="ja">Jaén</option>
+
+                                <option value="co">Córdoba</option>
+
+                                <option value="gr">Granada</option>
+
+                                <option value="al">Almería</option>
+
+                            </optgroup>
+                        </select><br>
+                    </fieldset>
+                    <fieldset>
+                        <legend class="leyenForm">Encuesta</legend>
+                        <label for="pregunta1">¿Qué es para ti la Inteligencia Artificial?</label><br>
+                        <textarea id="pregunta1" name="pregunta1" rows="5" cols="50" placeholder="Para mí la IA es..."></textarea><br>
+
+                        <label for="pregunta2">¿Cuál crees que es el futuro de la Inteligencia Artificial?</label><br>
+                        <textarea id="pregunta2" name="pregunta2" rows="5" cols="50" placeholder="Creo que el futuro de la IA es..."></textarea><br>
+
+                        <p>¿Estás familiarizado estás con la Inteligencia Artificial?</p>
+                        <input type="radio" id="opcion1-1" name="opcion1" value="nada"><label for="opcion1-1">Nada
+                            familiarizado</label><br>
+                        <input type="radio" id="opcion1-2" name="opcion1" value="Algo"><label for="opcion1-2">Algo
+                            familiarizado</label><br>
+                        <input type="radio" id="opcion1-3" name="opcion1" value="Bastante"><label
+                            for="opcion1-3">Bastante
+                            familiarizado</label><br>
+                        <input type="radio" id="opcion1-4" name="opcion1" value="Mucho"><label for="opcion1-4">Muy
+                            familiarizado</label><br>
+
+                        <p>¿Cuál es la IA que más has utilizado?</p>
+                        <label for="opcion2-1"><input type="radio" id="opcion2-1" name="opcion2" value="ChatGPT">
+                            ChatGPT</label><br>
+                        <label for="opcion2-2"><input type="radio" id="opcion2-2" name="opcion2" value="MidJourney">
+                            MidJourney</label><br>
+                        <label for="opcion2-3"><input type="radio" id="opcion2-3" name="opcion2" value="Bing"> Bing
+                            AI</label><br>
+                        <label for="opcion2-4"><input type="radio" id="opcion2-4" name="opcion2" value="Boomy">
+                            Boomy</label><br>
+
+                        <label for="opciones">¿En qué tecnologías relacionadas con la Inteligencia Artificial estás
+                            interesado?</label><br>
+                        <select id="opciones" name="opciones" multiple>
+                            <option value="aprendizaje-maquina">Machine Learning</option>
+                            <option value="redes-neuronales">Redes neuronales</option>
+                            <option value="procesamiento-lenguaje-natural">Procesamiento de lenguaje natural</option>
+                            <option value="ia-aplicada">IA aplicada a tecnologías</option>
+                            <option value="filosofia-ia">Filosofía de la IA</option>
+                        </select><br>
+                        <label for="range">Indique su satisfacción con la pagina (de 0 a 10, de 1 en 1):</label> <br>
+
+                        <input type="range" name="range" id="range" min="0" max="10" step="1"><br>
+
+                        <label for="suscribirme">Quiero suscribirme</label>
+                        <input type="checkbox" id="suscribirme" name="suscribirme"><br>
+
+                        <button type="submit" value="Enviar" name="enviar" id="enviar">Enviar</button>
+                        <button type="reset" value="reset" name="reset" id="reset">Restablecer</button>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="volver volverF">
+                <a href="../index.html#articulo1Apps"><img src="../images/back-button-icon.png"
+                        alt="Vuelva a la página principal"></a>
+            </div>
+        </main>
+</article>
+<footer>
+    <p>Alumno1: Jose Luis Pino</p>
+    <p>Alumno2: Marco A. Blanco Lebrón</p>
+    <p>Asignatura: Lenguajes de marcas</p>
+    <p>Curso: 2022-2023</p>
+    <div id="UpButton"><a href="#header">^</a></div>
+</footer>
+</body>
+
+</html>

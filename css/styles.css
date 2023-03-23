@@ -1,0 +1,266 @@
+@import url('https://fonts.cdnfonts.com/css/poppins');
+
+:root {
+    --color-fondo: #e4e4e4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 1000px;
+    background-color: black;
+    z-index: -10;
+}
+
+/*HEADER*/
+
+header {
+    position: fixed;
+    top: 0;
+    Left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgb(0, 0, 0);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    transition: 1s;
+}
+
+header .banner {
+    position: absolute;
+    top: 0;
+    Left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+header .logo {
+    position: absolute;
+    top: 50%;
+    Left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 8vw;
+    color: #fff;
+    font-weight: 700;
+    transition: 1s;
+    text-decoration: none;
+    z-index: 1;
+    transition-timing-function: ease;
+}
+
+header.sticky {
+    height: 80px;
+}
+
+header.sticky .logo {
+    position: absolute;
+    font-size: 1.9em;
+    left: 100px;
+    transform: translate(0, -50%);
+    transition-timing-function: ease;
+}
+
+header.sticky .banner {
+    opacity: 0.5;
+}
+
+
+
+
+nav {
+    position: relative;
+    dispLay: flex;
+    z-index: 1;
+    padding: 0;
+    height: 100%;
+    text-align: center;
+    margin-left: 0;
+}
+
+nav ul {
+    position: relative;
+    dispLay: flex;
+    transition: 0.25s;
+    transform: translateX(100px);
+    opacity: 0;
+    margin-right: 20px;
+    text-align: center;
+}
+
+header.sticky nav ul {
+    transform: translateX(0px);
+    opacity: 1;
+    transition-delay: 0.75s;
+}
+
+
+nav ul li {
+    list-style: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li:hover {
+    background-color: #bfbfbf;
+}
+
+nav ul li a:hover {
+    color: black;
+}
+
+nav ul li a {
+    color: #fff;
+    dispLay: inline-block;
+    padding: 1.5vw 2vw;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+/*MAIN*/
+main {
+    background-color: var(--color-fondo);
+    display: flex;
+    flex-direction: column;
+}
+
+section>h2 {
+
+    width: 25em;
+    height: 2em;
+    font-size: 2em;
+    padding: 0.2em;
+    border-radius: 0px 50px 50px 0px;
+}
+
+.articulos {
+    background-color: #fff;
+    margin: 3vw auto;
+    width: 75vw;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw;
+    border-radius: 1vw;
+    -webkit-box-shadow: 0px 0px 28px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 28px -8px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 28px -8px rgba(0,0,0,0.75);
+}
+
+.articulo1 {
+    margin-top: 20vw;
+}
+
+.articulo {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2vw;
+}
+
+.textos {
+    display: flex;
+    flex-direction: row;
+}
+
+
+figure>a>picture>img {
+    max-width: 20vw;
+    margin-right: 1vw;
+}
+
+figcaption {
+    font-size: 1vw;
+}
+
+.cabeceras {
+    margin-bottom: .5vw;
+}
+
+/*FOOTER*/
+footer {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-weight: bold;
+    padding: 1vw 0;
+}
+
+#UpButton {
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    position: fixed;
+    height: 50px;
+    background-color: #fff;
+    z-index: 20;
+    font-size: 50px;
+    border-radius: 10px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    animation: botonsubir 1s ease 1s infinite normal;
+}
+
+#UpButton>a:link {
+    text-decoration: none;
+    color: black;
+}
+
+#UpButton>a:visited {
+    color: black;
+    text-decoration: none
+}
+
+#UpButton>a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: .7vw;
+}
+
+@keyframes botonsubir {
+    0% {
+        transform: translateY(-5px);
+
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(-5px);
+    }
+}
+
+/* BOTONES Y ANIMACIONES */
+
+
+h2>a {
+    text-decoration: none;
+}
+
+section>h2 {
+    font-size: 3vw;
+    color: rgba(0, 0, 0, 0.307);
+    transition: 0.5s
+}
+
+section>h2:hover {
+ 
+
+        letter-spacing: 10px;
+}
